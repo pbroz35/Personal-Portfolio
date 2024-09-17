@@ -75,7 +75,7 @@ export const projects = [
     title: "AI Powered Stock Dashboard",
     des: "Unlock smarter investing as intelligent AI analyzes data in real-time to recommend the best stocks for your portfolio.",
     img: "/project1.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "Vite.png", "chakratransp.png"],
     link: "https://github.com/pbroz35/Stocks-project",
   },
   {
@@ -83,24 +83,24 @@ export const projects = [
     title: "AI Chatbot",
     des: "Experience seamless conversations with our AI chatbot, designed to understand and respond to your needs in real-time.",
     img: "/project2Edit2.jpg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    iconLists: ["chakratransp.png", "/tail.svg", "/ts.svg", "Vite.png"],
+    link: "https://github.com/pbroz35/AI-Assistant",
   },
   {
     id: 3,
     title: "Movie Library",
     des: "Discover your next favorite film with our movie website. Browse an extensive library, access detailed movie information",
     img: "/project3.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "Vite.png"],
+    link: "https://github.com/pbroz35/movie-website",
   },
   {
     id: 4,
     title: "OpenStreetMap",
     des: "A mapping system developed in C++ to find your way around campus by using Dijkstra's algorithm",
     img: "/b5.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    iconLists: ["axios.png", "ISO_C++_Logo.svg"],
+    link: "https://github.com/pbroz35",
   },
 ];
 
@@ -115,12 +115,6 @@ export const testimonials = [
     quote: "Peter is an excellent worker and is always diligent in his tasks. He helps whenever he can, and never fails to show up on time, ready to work. He listens to others, and works with them to not only improve himself, but the group as a whole. He is an amazing friend, and a pleasure to work with!",
     name: "Adyan Khan",
     title: "Former Colleague",
-  },
-  {
-    quote:
-      "~ Quote ~",
-    name: "Luc Renambot",
-    title: "Research Professor at the University of Illinois at Chicago",
   }
 ];
 
@@ -162,14 +156,14 @@ export const workExperience = [
   {
     id: 2,
     title: "Undergraduate Researcher",
-    desc: "Collaborated with the software engineering team in weekly meetings to develop and enhance the SAGE3 software using TypeScript, JavaScript, React, and Docker.",
+    desc: "Collaborated with the software engineering team in weekly meetings to develop and enhance the SAGE3 software using TypeScript, JavaScript, React, and Docker, and assisted in implementing UI and AI features under the guidance of Research Professor Luc Renambot.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
     title: "Fullstack Engineer Intern",
-    desc: "description ............................................................",
+    desc: "Developed and maintained multiple web applications, utilizing modern technologies such as ViteJS, React, TailwindCSS, NodeJS, and TypeScript to create responsive and dynamic user experiences.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
@@ -183,7 +177,7 @@ export const socialMedia = [
     link: "https://github.com/pbroz35",
   },
   {
-    id: 3,
+    id: 2,
     img: "/link.svg",
     link: "https://www.linkedin.com/in/1brozek/",
   },
