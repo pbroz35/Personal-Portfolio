@@ -17,8 +17,8 @@ const MagicButtonResume = ({
     
         onClick={()=>{
         const link = document.createElement('a');
-        link.href= '/resume.pdf'
-        link.download = 'Piotr_Brozek_Resume.pdf'
+        link.href= '/Piotr_Brozek_SWE_Resume.pdf';
+        link.download = 'Piotr_Brozek_SWE_Resume.pdf'
         link.click();
       }}
     >
