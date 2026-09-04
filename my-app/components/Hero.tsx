@@ -28,12 +28,12 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
 
-        <div className="max-w[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
 
 
-            <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Transforming Concepts into Seamless User Experiences"/>
+            <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Building Production AI Systems From Prototype to Deployment"/>
 
-            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">👋 Hi, I&apos;m Piotr, a Software Engineer based in Chicago.</p>
+            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">👋 Hi, I&apos;m Piotr, an AI &amp; Software Engineer based in Chicago.</p>
 
             <a href="#projects">
             <MagicButton 

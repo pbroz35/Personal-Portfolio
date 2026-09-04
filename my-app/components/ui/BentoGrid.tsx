@@ -5,10 +5,13 @@ import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import animationData from "@/data/confetti.json"
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "react-lottie";
+
+// Lottie is DOM-dependent — load it client-only.
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 export const BentoGrid = ({
   className,
@@ -53,7 +56,7 @@ export const BentoGridItem = ({
 
   const handleCopy = () =>{
 
-    navigator.clipboard.writeText('1brozek.peter@gmail.com');
+    navigator.clipboard.writeText('piotr.brozek10@gmail.com');
 
     setCopied(true);
 
@@ -63,7 +66,7 @@ export const BentoGridItem = ({
     <div
       className={cn(
         // remove p-4 rounded-3xl dark:bg-black dark:border-white/[0.2] bg-white  border border-transparent, add border border-white/[0.1] overflow-hidden relative
-        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 ",
+        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:border-white/[0.2] hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple/[0.08] transition-all duration-300 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 ",
         className
       )}
       style={{
@@ -113,7 +116,7 @@ export const BentoGridItem = ({
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          <div className="font-sans font-light leading-relaxed md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
             {description}
           </div>
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
@@ -134,7 +137,7 @@ export const BentoGridItem = ({
           absolute -right-1 lg:-right-2"
             >
               <div className="flex flex-col gap-3 lg:gap-8">
-                {["React.JS", "Next.js", "TypeScript"].map((item) => (
+                {["Python", "TypeScript", "React"].map((item) => (
                   <span
                     key={item}
                     className="py-2 lg:py-4 lg:px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
@@ -147,7 +150,7 @@ export const BentoGridItem = ({
 
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
-                {["React.JS", "Next.js", "TypeScript"].map((item) => (
+                {["LangGraph", "FastAPI", "Docker"].map((item) => (
                   <span
                     key={item}
                     className="py-2 lg:py-4 lg:px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
@@ -166,15 +169,14 @@ export const BentoGridItem = ({
             <div className="mt-5 relative"> 
               <div className={`absolute -bottom-5 right-0`}> 
 
-              <Lottie options={{
-                loop: copied,
-                autoplay: copied,
-                animationData,
-                rendererSettings: {
+              <Lottie
+                loop={copied}
+                autoplay={copied}
+                animationData={animationData}
+                rendererSettings={{
                   preserveAspectRatio: 'xMidYMid slice',
-
-                }
-              }} />
+                }}
+              />
 
               </div>
 

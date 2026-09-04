@@ -2,15 +2,17 @@ import React from "react";
 
 import { workExperience } from "@/data";
 import { Button } from "./MovingBorders";
+import { TracingBeam } from "./TracingBeam";
 
 const Experience = () => {
   return (
-    <div className="py-20 w-full">
+    <div className="py-20 w-full" id="experience">
       <h1 className="heading">
         My <span className="text-purple">work experience</span>
       </h1>
 
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+      <TracingBeam className="w-full">
+      <div className="w-full mt-12 grid grid-cols-1 md:grid-cols-2 gap-10">
         {workExperience.map((card) => (
           <Button
             key={card.id}
@@ -39,7 +41,7 @@ const Experience = () => {
                 <h1 className="text-start text-xl md:text-2xl font-bold">
                   {card.title}
                 </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
+                <p className="text-start text-white-100 mt-3 font-normal leading-relaxed">
                   {card.desc}
                 </p>
               </div>
@@ -47,6 +49,7 @@ const Experience = () => {
           </Button>
         ))}
       </div>
+      </TracingBeam>
     </div>
   );
 };

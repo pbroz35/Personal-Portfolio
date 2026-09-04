@@ -6,8 +6,9 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Create Next App",
-  description: "Generated abc by create next app",
+  title: "Piotr Brozek | AI & Software Engineer",
+  description:
+    "AI and software engineer in Chicago building production agent infrastructure, LLM observability, and full-stack applications.",
 };
 
 export default function RootLayout({

@@ -1,14 +1,14 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I can help drive your company's growth by providing innovative solutions ",
+    title: "I build production AI systems — from agent infrastructure to the interfaces on top of them",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "AI engineer with a focus on agent orchestration and LLM infrastructure.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently learning more about Machine Learning and AI",
+    title: "Currently working with LangGraph, MCP, and LLM observability",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -70,61 +70,28 @@ export const gridItems = [
 ];
 
 export const projects = [
-  
   {
     id: 1,
-    title: "MRI Brain Tumor Detection and Classification ",
-    des: "A machine learning-based system for detecting and classifying brain tumors from MRI scans to assist in early and accurate diagnosis.",
-    img: "/mlProject.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "Vite.png", "chakratransp.png"],
-    link: "",
+    title: "Clinical Trials Matching Platform",
+    des: "A full-stack trial-matching system pairing a deterministic rules engine with local LLM review to screen 108 patients against 7,964 recruiting trials — built on FastAPI, LangGraph, and Ollama, with a SHA-256 prompt-keyed cache that cut match latency from 140s to 25ms.",
+    img: "/project-clinical-trials.svg",
+    iconLists: ["/python.svg", "/fastapi.svg", "/re.svg", "/next.svg", "/ts.svg"],
+    link: "https://github.com/pbroz35/clinical-trials-matching",
   },
   {
     id: 2,
-    title: "Real-Time Transcription App",
-    des: "A real-time transcription app that converts spoken language into text instantly using speech-to-text technology for enhanced accessibility and productivity.",
-    img: "/mic.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "Vite.png", "chakratransp.png"],
-    link: ""
+    title: "MRI Brain Tumor Detection and Classification",
+    des: "A machine learning system classifying brain tumors across 10,000+ MRI scans, combining ResNet-18 feature extraction with AdaBoost to improve accuracy on small clinical datasets where standalone CNNs underperform.",
+    img: "/project-mri-classifier.svg",
+    iconLists: ["/python.svg", "/tensorflow.svg", "/keras.svg"],
+    link: "https://github.com/pbroz35/MRI-Tumor-Classification-Hybrid-ML-Model",
   },
-  {
-    id: 3,
-    title: "AI Powered Stock Dashboard",
-    des: "Unlock smarter investing as intelligent AI analyzes data in real-time to recommend the best stocks for your portfolio.",
-    img: "/project1.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "Vite.png", "chakratransp.png"],
-    link: "https://github.com/pbroz35/Stocks-project",
-  },
-  {
-    id: 4,
-    title: "AI Chatbot",
-    des: "Experience seamless conversations with our AI chatbot, designed to understand and respond to your needs in real-time.",
-    img: "/project2Edit2.jpg",
-    iconLists: ["chakratransp.png", "/tail.svg", "/ts.svg", "Vite.png"],
-    link: "https://github.com/pbroz35/AI-Assistant",
-  },
-  // {
-  //   id: 3,
-  //   title: "Movie Library",
-  //   des: "Discover your next favorite film with our movie website. Browse an extensive library, access detailed movie information",
-  //   img: "/project3.png",
-  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "Vite.png"],
-  //   link: "https://github.com/pbroz35/movie-website",
-  // },
-  // {
-  //   id: 4,
-  //   title: "OpenStreetMap",
-  //   des: "A mapping system developed in C++ to find your way around campus by using Dijkstra's algorithm",
-  //   img: "/b5.svg",
-  //   iconLists: ["axios.png", "ISO_C++_Logo.svg"],
-  //   link: "https://github.com/pbroz35",
-  // },
 ];
 
 export const testimonials = [
   {
     quote:
-      "I had the pleasure of working with Piotr at the Electronic Visualization Lab, where he demonstrated exceptional skills in React, Node.js, Express, Docker, Next.js, Vite, and various web technologies. His expertise in building front-end components, developing back-end services, optimizing applications, and integrating APIs made him an invaluable asset to our team. Piotr’s proactive nature and passion for innovation were evident in every project.",
+      "I had the pleasure of working with Piotr at the Electronic Visualization Lab, where he demonstrated exceptional skills in React, Node.js, Express, Docker, Next.js, Vite, and various web technologies. His expertise in building front-end components, developing back-end services, optimizing applications, and integrating APIs made him an invaluable asset to our team. Piotr's proactive nature and passion for innovation were evident in every project.",
     name: "Shrut Patel",
     title: "Software Engineer Intern at Electronic Visualization Lab",
   },
@@ -169,30 +136,34 @@ export const companies = [
 ];
 
 export const workExperience = [
-
-    {
+  {
+    id: 1,
+    title: "Software Engineer, AI/ML Platform - Tempus AI",
+    desc: "Architected and deployed deep_agent_sdk, a production Python package wrapping LangChain/LangGraph with subagent tracing, semantic tool retrieval, memory, and human-in-the-loop interrupts, running on GCP/GKE backed by Postgres. Built the LLM observability layer with OpenTelemetry and OpenInference routing traces into Arize Phoenix, and cut tool-invocation latency 80% via MCP server pre-warming and cached node execution. Benchmarked 5+ agent frameworks across 12 dimensions and presented the findings to 200+ engineers and senior leadership.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+  {
     id: 2,
-    title: "Research Assistant - Electronic Visualization Lab",
-    desc: "Enhanced SAGE3, a collaborative whiteboard used by 5,000+ users across 800+ institutions, by implementing LLM features such as DeepPlot visualizations, speaker diarization, and Llama 3 summarization using TypeScript, React, LangChain, and Docker. Built AI-powered export tools with Python and React to generate summaries as CSVs, PDFs, images, and sticky notes.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Research Assistant / Software Engineer - Electronic Visualization Laboratory",
+    desc: "Enhanced SAGE3, a collaborative whiteboard used by 5,000+ users across 800+ institutions, using TypeScript, React, and Docker-based cloud deployment in an Agile/Scrum team. Built a LangChain LLM pipeline integrating DeepPlot visualizations, speaker diarization, and Llama 3 summarization to improve transcription accuracy and reduce manual summarization by 50%, plus AI-powered export tools generating summaries as CSVs, PDFs, images, and sticky notes.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Software Engineer Intern - Ingenio Healthcare",
-    desc: "As a Full-Stack Developer Intern at Ingenio Healthcare, I built a physician-finder tool using React, Redux, Node.js, and PostgreSQL, integrating NPPES data and MapGL for seamless provider search and scheduling. I also developed an AI-powered insurance authorization system with the OpenAI API, reducing approval time by 30% and enabling physicians to write authorizations 25% faster.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Full-Stack Developer Intern - Ingenio Care",
+    desc: "Developed a cross-platform physician-finder tool with React, Redux, Node.js, and Material UI for locating providers and booking appointments. Built an AI-powered insurance authorization system using the OpenAI API with complex PostgreSQL database management, reducing processing time by 30%.",
+    className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
-
   {
     id: 4,
-    title: "Fullstack Engineer Intern - Electronic Visualization Lab",
-    desc: "As a Full-Stack Software Intern at the Electronic Visualization Lab, I improved the performance of an AI-powered stock dashboard by 25% through custom web scraping and data filtering from 100+ sources per request. I built real-time data applications with React, Node.js, and Express, integrating AI for predictive stock insights. I also developed interactive tools like a movie website and AI chatbot to boost user engagement.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "B.S. Computer Science - University of Illinois Chicago",
+    desc: "Graduated Magna Cum Laude with a 3.87 GPA. Certified through the IBM Agentic AI, RAG & MCP Certification Series and Stanford University's AI in Healthcare program.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
-
 ];
 
 export const socialMedia = [

@@ -2,6 +2,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
+import { Meteors } from "./Meteors";
 
 const Footer = () => {
   return (
@@ -15,16 +16,17 @@ const Footer = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center">
+      <div className="relative flex flex-col items-center overflow-hidden rounded-3xl px-4 py-10">
+        <Meteors number={20} />
         <h1 className="heading lg:max-w-[45vw]">
           Ready to take <span className="text-purple">your</span> digital
           presence to the next level?
         </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
+        <p className="text-white-200 md:mt-10 my-5 text-center leading-relaxed">
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:1brozek.peter@gmail.com">
+        <a href="mailto:piotr.brozek10@gmail.com">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -34,7 +36,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2025 Piotr Brozek
+          Copyright © 2026 Piotr Brozek
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
@@ -44,7 +46,7 @@ const Footer = () => {
               href={info.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 transition-all duration-200 hover:border-white/30 hover:bg-white/10 hover:-translate-y-0.5"
             >
               <img src={info.img} alt="icons" width={20} height={20} />
             </a>
