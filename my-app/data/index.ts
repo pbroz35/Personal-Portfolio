@@ -78,13 +78,13 @@ export const projects = [
     iconLists: ["/python.svg", "/fastapi.svg", "/re.svg", "/next.svg", "/ts.svg"],
     link: "https://github.com/pbroz35/clinical-trials-matching",
   },
-  {
+    {
     id: 2,
-    title: "MRI Brain Tumor Detection and Classification",
-    des: "A machine learning system classifying brain tumors across 10,000+ MRI scans, combining ResNet-18 feature extraction with AdaBoost to improve accuracy on small clinical datasets where standalone CNNs underperform.",
-    img: "/project-mri-classifier.svg",
-    iconLists: ["/python.svg", "/tensorflow.svg", "/keras.svg"],
-    link: "https://github.com/pbroz35/MRI-Tumor-Classification-Hybrid-ML-Model",
+    title: "Research Agent",
+    des: "An agentic RAG system split into three independently deployable services, where a LangChain/LangGraph deep agent discovers every tool at runtime over MCP — so new tools ship without redeploying the agent. Hybrid semantic search on Neon Postgres + pgvector, streamed to a live tool-call UI over AG-UI/SSE.",
+    img: "/project-research-agent.svg",
+    iconLists: ["/python.svg", "/fastapi.svg", "/next.svg", "/ts.svg", "/dock.svg"],
+    link: "https://github.com/pbroz35/research-agent",
   },
 ];
 
