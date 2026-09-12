@@ -1,0 +1,72 @@
+<svg width="384" height="240" viewBox="0 0 384 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="raBg" x1="0" y1="0" x2="384" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#181B3A"/>
+      <stop offset="1" stop-color="#0E1024"/>
+    </linearGradient>
+    <linearGradient id="raAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#CBACF9"/>
+      <stop offset="1" stop-color="#6D5BD0"/>
+    </linearGradient>
+    <radialGradient id="raGlow" cx="0.5" cy="0.45" r="0.62">
+      <stop offset="0" stop-color="#CBACF9" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#CBACF9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="384" height="240" fill="url(#raBg)"/>
+  <circle cx="192" cy="104" r="124" fill="url(#raGlow)"/>
+
+  <!-- connections from the agent core out to the tool nodes -->
+  <g stroke="#3A3D6E" stroke-width="1.6" stroke-linecap="round" fill="none">
+    <path d="M192 108 L96 62"/>
+    <path d="M192 108 L288 62"/>
+    <path d="M192 108 L80 166"/>
+    <path d="M192 108 L304 166"/>
+    <path d="M192 108 L192 186"/>
+  </g>
+  <g stroke="#CBACF9" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="4 7" opacity="0.75" fill="none">
+    <path d="M192 108 L96 62"/>
+    <path d="M192 108 L304 166"/>
+  </g>
+
+  <!-- agent core -->
+  <circle cx="192" cy="108" r="34" fill="#1F2247" stroke="url(#raAccent)" stroke-width="2"/>
+  <circle cx="192" cy="108" r="21" fill="none" stroke="#CBACF9" stroke-width="1.4" opacity="0.55"/>
+  <circle cx="192" cy="108" r="8" fill="url(#raAccent)"/>
+
+  <!-- tool nodes -->
+  <g fill="#1F2247" stroke="#3A3D6E" stroke-width="1.5">
+    <rect x="62" y="44" width="68" height="34" rx="9"/>
+    <rect x="254" y="44" width="68" height="34" rx="9"/>
+    <rect x="46" y="148" width="68" height="34" rx="9"/>
+    <rect x="270" y="148" width="68" height="34" rx="9"/>
+  </g>
+
+  <!-- node glyphs: search, vector, db, doc -->
+  <g stroke="#57E39B" stroke-width="2" fill="none" stroke-linecap="round">
+    <circle cx="90" cy="61" r="7"/>
+    <path d="M95 66 L101 72"/>
+  </g>
+  <g stroke="#CBACF9" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M280 68 L288 54 L296 68"/>
+    <path d="M283 62 L293 62"/>
+  </g>
+  <g stroke="#7FB3FF" stroke-width="2" fill="none" stroke-linecap="round">
+    <ellipse cx="80" cy="159" rx="11" ry="4.5"/>
+    <path d="M69 159 V171 C69 173.5 74 175.5 80 175.5 C86 175.5 91 173.5 91 171 V159"/>
+  </g>
+  <g stroke="#F3A5C0" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M297 153 h14 l6 6 v20 h-20 z"/>
+    <path d="M302 165 h10 M302 172 h10"/>
+  </g>
+
+  <!-- streaming tool-call trace -->
+  <g transform="translate(120,180)">
+    <rect x="0" y="0" width="144" height="38" rx="9" fill="#1F2247" stroke="#3A3D6E" stroke-width="1.5"/>
+    <circle cx="16" cy="14" r="3.5" fill="#57E39B"/>
+    <rect x="28" y="11" width="74" height="5" rx="2.5" fill="#4A4E82"/>
+    <circle cx="16" cy="27" r="3.5" fill="#CBACF9"/>
+    <rect x="28" y="24" width="52" height="5" rx="2.5" fill="#3A3D6E"/>
+  </g>
+</svg>
